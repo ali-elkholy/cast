@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<link rel="icon" href="protection.png">
+       <script src="crypto33.js"></script>
+    <script src="https://kit.fontawesome.com/c21071a95e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+	<title> +
+        CASTLE </title>
+</head>
+
+	<body onload="checkCookie()" style="text-align: center">
+
+
+<div class="topnav" id="myTopnav">
+  <a href="index.html" class="active">الصفحة الرئيسية</a>
+  <a href="register.html">إنشاء حساب</a>
+<a href="video.html">شرح الإستخدام</a>
+    <a href="video.html">تواصل معنا</a>
+     <i class="fas fa-chess-rook" id="mask"></i>
+  <a href="javascript:void(0);" class="icon" onclick="myFunctions()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div> 
+         
+        <center>
+
+        
+</center>
+     
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="إغلاق">&times;</span>
+<div class="timeline">  
+  <div class="contaner left">
+    <div class="content">
+      <h3><i class="fas fa-lock"></i>توليد كلمات المرور صعبة الكسر أو التخمين</h3>
+      <p>لا يستغرق كثير من مستخدمي الإنترنت وقتا طويلا في التفكير في "كلمة مرور" مناسبة وقوية لحماية حساباتهم وبياناتهم الشخصية، الأمر الذي قد يعرضهم لخطر الاختراق بسهولة.
+وغالبا ما ينصح خبراء الأمن السيبراني المستخدمين باستخدام كلمات سر معقدة وطويلة.
+وهنا ستجد طلبك بسهولة </p>
+    </div>
+  </div>
+ 
+  <div class="contaner left">
+    <div class="content">
+      <h3><i class="fas fa-user-secret"></i>تشفير وفك تشفير الرسائل </h3>
+      <p>إشعر بحياة أمنة علي مواقع التواصل الإجتماعى وذلك عن طريق تشفير نص الرسائل بين الطرفين  بكلمة مرور محددة مسبقا بين طرفي المحادثة ولا يمكن لللمتسللين معرفة محتوي الرسالة إلا عن طريق معرفة مفتاح التشفير ر المحدد مسبقا .وهذه العملية لا تعتمد على طريقة تشفير معلنة انما تم إعدادها بطريقة يدوية مما يصعب من عملية فك التشفير للرسائل </p>
+    </div>
+  </div>
+
+  
+</div>
+</div>
+            
+   <form action="config.php">
+  <div class="container">
+<button class="registerbtn" type="button"  onclick="document.getElementById('id01').style.display='block'"><i class="fa fa-exclamation-circle"></i>ماذا نقدم</button>
+
+    <label for="email"><b>إسم المستخدم</b></label>
+    <input type="text" placeholder="إسم المستخدم" name="username" id="email" required>
+
+    <label for="psw"><b>كلمة المرور</b></label>
+    <input type="password" placeholder="كلمة المرور" name="password" id="psw" required>
+
+  
+
+    <button type="submit" class="registerbtn">تسجيل الدخول</button>
+        
+  </div>
+
+    <p>ليس لديك حساب <a href="index.html" class="up"> التسجيل الأن</a>.</p>
+
+</form>
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+	<script>
+function startTimer(duration, display) {
+    var timer = duration, minutes, seconds;
+    setInterval(function () {
+        minutes = parseInt(timer / 60, 10);
+        seconds = parseInt(timer % 60, 10);
+
+        minutes = minutes < 10 ? "0" + minutes : minutes;
+        seconds = seconds < 10 ? "0" + seconds : seconds;
+
+        display.textContent = minutes + ":" + seconds;
+
+        if (--timer < 0) {
+            timer = duration;
+        }
+    }, 1000);
+}
+
+window.onload = function () {
+    var fiveMinutes = 60 * 5,
+        display = document.querySelector('#time');
+    startTimer(fiveMinutes, display);
+};
+</script>
+
+      
+</body>
+        
+</html>

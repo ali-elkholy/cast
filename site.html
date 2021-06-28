@@ -1,0 +1,162 @@
+
+<!DOCTYPE HTML> 
+<html> 
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/c21071a95e.js" crossorigin="anonymous"></script>
+<link rel="icon" href="protection.png">
+
+
+<link rel="stylesheet" href="style.css">
+    <link rel="icon" href="cyber.png">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap" rel="stylesheet">
+        <script src="crypto33.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head> 
+    
+    <link rel="stylesheet" type="text/css" href="css.css">
+    
+    
+	<title> SAFTEY </title>
+
+</head> 
+    
+    
+  
+<body style="text-align:center;" id="body"> 
+   
+
+<div class="topnav" id="myTopnav">
+  <a href="index.html" >الصفحة الرئيسية</a>
+  <a href="site.html" class="active">معلومات عنك</a>
+<a href="video.html">شرح الإستخدام</a>
+
+     <i class="fas fa-user-secret" id="mask"></i>
+
+  <a href="javascript:void(0);" class="icon" onclick="myFunctions()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div> 
+  
+        <script src= 
+"https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"> 
+    </script> 
+         <script> 
+        /* Add "https://api.ipify.org?format=json" statement 
+           this will communicate with the ipify servers in 
+           order to retrieve the IP address $.getJSON will 
+           load JSON-encoded data from the server using a 
+           GET HTTP request */ 
+  
+        $.getJSON("https://api.ipify.org?format=json", 
+                                          function(data) { 
+  
+            // Setting text of element P with id gfg 
+            $("#gfg").html(data.ip); 
+        }) 
+    </script> 
+
+        <div class="container">
+        
+        <div class="header">
+
+            </div>
+        </div>
+           <section>
+         
+        
+  <table class="container">
+
+	<tbody>
+		<tr>
+			<td>IP</td>
+			<td><p id="gfg"></p></td>
+	
+		</tr>
+		<tr>
+			<td>Os</td>
+			<td><p id="os"></p></td>
+		
+		</tr>
+		<tr>
+			<td>Country</td>
+			<td><p class="country"></td>
+		
+		</tr>
+    <tr>
+			<td>Browser</td>
+      <td><p id="browser"></p></td>
+		
+		</tr>
+    <tr>
+			<td>Languge</td>
+			<td><p><script>  
+        var usrlang = navigator.language  
+                || navigator.userLanguage; 
+        document.write(usrlang); 
+    </script></p></td>
+		
+		</tr>
+   
+	</tbody>
+</table>
+
+          
+               </center>
+
+ </section>
+        
+        
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+    
+<script src="jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            
+            $.get("http://ipinfo.io",function(response){
+                console.log(response);
+     
+                $(".city").html(response.city);
+                $(".country").html(response.country);
+                $(".region").html(response.region);
+            },"jsonp");
+        
+        }); 
+    </script>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/platform/1.3.6/platform.min.js"></script>
+     <script>
+     document.getElementById('os').textContent = platform.os;
+     document.getElementById('browser').textContent = platform.name;
+     document.getElementById('version').textContent = platform.version;
+     document.getElementById('layout').textContent = platform.layout;
+     document.getElementById('description').textContent = platform.description;
+    </script>
+
+</body> 
+   <div class="footer">
+    <h6><a href="https://ali-elkholy.github.io/About/" target="_blank">Created By <i class="fas fa-laptop-code" id="f"></i> ALI ELKHOLY</a></h6></div>
+</html> 
