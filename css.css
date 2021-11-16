@@ -23,6 +23,7 @@
     font-family: cairo;
     margin-bottom: 5px;
     width: 40%;
+    font-size: 13px
 }
 #btn1:hover{
 background-color: lightslategrey;
@@ -116,6 +117,7 @@ color: aliceblue;
     color: white;
     font-family: cairo;
     padding: 10px
+        
 }
 #btn1 a{
     font-family: cairo;
@@ -163,18 +165,9 @@ background: linear-gradient(to right, #3A6073, #16222A); /* W3C, IE 10+/ Edge, F
   top: -9px;
   font-size: 35px;
   font-weight: bold;
-    margin-bottom: 10px
+    
 
 }
-@media only screen and (max-width: 800px) {
-  .close {
- font-size: 30px;
- position: absolute;
-  font-weight: bold; 
-    float: left;
-    top: -2%}
-}
-
 #mask1{
     color: darkgrey
 }
@@ -243,7 +236,7 @@ textarea{
     
     border-radius: 5px;
     background-color: black;
-    color: goldenrod;
+    color: darkgray;
     font-weight: bold
     
 
@@ -258,7 +251,8 @@ textarea{
         border: 0px;
     border-radius: 5px;
     background: black;
-    color: goldenrod
+    color: grey;
+    font-size: 13px
 
 }
 .encrypt{
@@ -273,7 +267,8 @@ textarea{
     font-family: cairo;
     margin-bottom: 5px;
     width: 40%;
-    
+        font-size: 13px
+
     
 }
 #a{
@@ -311,18 +306,43 @@ span{
     padding-right: 5px;
     
     
-} 
+}
 #encryptedContent{
-    color: goldenrod;
+    color: dimgray;
     font-weight: bold;
 }
 #decryptedContent{
-    color: goldenrod;
+    color: darkgray;
     font-weight: bold
 }
 ::placeholder {
-  color: goldenrod;
+  color: darkgrey;
 }
 tr{
     text-align: center
+}
+
+
+
+.splach-page{
+    text-align: center;
+   display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+    margin-top: 10%
+}
+@media only screen and (max-width: 900px) {
+    .splach-page{
+    text-align: center;
+   display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+    margin-top: 20%
+}
+}
+ #myTopnav1 {
+     display: none;
+     text-align: center;
 }
